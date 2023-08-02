@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https: //fonts.googleapis.com/css2? family= Lato:wght@300;400 & family= Oswald & família= Poppins:ital,wght@0,200;0,500;0,900;1,300 &family= Torneio & display=swap"
+        rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <div class="circulo"></div>
+
+    <img src="./images/logo.png" class="logo">
+
+    <div class="conteudo">
+
+        <div class="caixa-texto">
+            <h2> It's not just Coffe<br> It's <span>Starbucks</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem natus aliquid iure<br> inventore,
+                distinctio in
+                recusandae nisi quod perferendis. Beatae, a facilis<br> dolorem iure nulla natus culpa laboriosam sed
+                at!</p>
+            <button>Lear More</button>
+        </div>
+
+        <div class="caixa-imagem">
+
+            <img src="./images/img1.png" class="starbucks">
+
+        </div>
+
+    </div>
+
+    <div class="menu">
+        <img src="./images/thumb1.png" class="botao-menu" onclick="trocaImagem('./images/img1.png'); trocaCor('#017143')">
+        <img src="./images/thumb2.png" class="botao-menu" onclick="trocaImagem('./images/img2.png'); trocaCor('#eb7495')">
+        <img src="./images/thumb3.png" class="botao-menu" onclick="trocaImagem('./images/img3.png'); trocaCor('#d752b1')">
+    </div>
+
+</body>
+<script>
+    let imagem = document.querySelector(".starbucks")
+    let circulo = document.querySelector(".circulo")
+
+    function trocaImagem(endereco) {
+        imagem.src = endereco
+    }
+
+    function trocaCor(cor){
+        circulo.style.background = cor
+    }
+
+    
+</script>   
+
+</html>
